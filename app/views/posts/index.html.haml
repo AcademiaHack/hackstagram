@@ -1,2 +1,11 @@
-%h1 Posts#index
-%p Find me in app/views/posts/index.html.erb
+.container
+  %header
+    = link_to 'HACKSTAGRAM', destroy_user_session_path, method: :delete
+  .scrolleable
+    .histories
+    .posts
+      - @posts.each do |post|
+        = render partial: 'post', locals: {post2: post}
+  %footer
+    .menu
+      OPCIONES DE MENU

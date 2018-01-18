@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+User.delete_all
+Post.delete_all
+
+user = User.create(email: 'romerramos@gmail.com', password: '123123')
+Post.create(location: '2178217812;1278218712', description: 'Hola mundo', user_id: user.id)
+Post.create(location: '2178217812;1278218712', description: 'Chao mundo', user_id: user.id)
+Post.create(location: '2178217812;1278218712', description: 'Esto es una prueba #soygafo', user_id: user.id)
