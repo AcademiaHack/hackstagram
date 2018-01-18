@@ -9,7 +9,9 @@
 User.delete_all
 Post.delete_all
 
-user = User.create(email: 'romerramos@gmail.com', password: '123123')
+user = User.create(email: 'romerramos@gmail.com', password: '123123', avatar: File.new("#{Rails.root}/app/assets/images/user.jpeg"))
+# profile = Profile.create(name: 'Romer Ramos', username: 'romerramos', gender: :male, birthdate: DateTime.now, bio: 'Esta es mi BIO')
+
 Post.create(location: '2178217812;1278218712', description: 'Hola mundo', user_id: user.id)
 Post.create(location: '2178217812;1278218712', description: 'Chao mundo', user_id: user.id)
 Post.create(location: '2178217812;1278218712', description: 'Esto es una prueba #soygafo', user_id: user.id)
