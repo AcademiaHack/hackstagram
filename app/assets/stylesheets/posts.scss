@@ -14,8 +14,9 @@ header {
 }
 
 .scrolleable {
-  height: 700px; //350px
-  overflow-y: scroll;
+  height: calc(100vh - 123px);
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .avatar {
@@ -27,14 +28,8 @@ header {
   border-top: solid 1px #e0e0e0;
 }
 
-.post {
-  // background-color: #ffff0029;
-  // margin-top: 10px;
-}
-
 .post-header {
   height: 30px;
-  // background-color: red;
 }
 
 .post-image {
