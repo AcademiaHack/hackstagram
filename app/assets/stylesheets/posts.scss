@@ -1,22 +1,16 @@
 // Place all the styles related to the posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.container {
-  margin: auto;
-  width: 300px;
-}
 
 header {
-  height: 30px;
+  height: 60px;
   background-color: white;
-  border-bottom: solid 1px #b5b5b5;
-  box-shadow: 1px 9px 11px -7px rgba(0,0,0,0.75);
+  border-bottom: solid 1px #e0e0e0;
   text-align: center;
 }
 
 .histories {
-  height: 50px;
-  padding: 10px;
+  height: 80px;
 }
 
 .scrolleable {
@@ -25,17 +19,17 @@ header {
 }
 
 .avatar {
-  height: 20px;
-  width: 20px;
+  width: 30px;
 }
 
 .posts {
   // background-color: yellow;
+  border-top: solid 1px #e0e0e0;
 }
 
 .post {
-  background-color: #ffff0029;
-  margin-top: 10px;
+  // background-color: #ffff0029;
+  // margin-top: 10px;
 }
 
 .post-header {
@@ -44,14 +38,12 @@ header {
 }
 
 .post-image {
-  height: 300px;
-  background-color: blue;
-  color: white;
+  height: 445px;
 }
 
 .image-hackgram { 
-  height: 300px;
-  width: 300px;
+  height: 445px;
+  width: 445px;
 }
 
 .post-interactions {
@@ -71,7 +63,62 @@ header {
   color: white;
 }
 
+// CLASES NUEVAS
+
+.logo-home {
+  width: 140px;
+  padding-top: 5px;
+}
+
+.history-user-avatar {
+  width: 60px;
+}
+
+.user-history {
+  position: relative;
+  background-image: image-url("instagram_border.png");
+}
+
+.user-title {
+  font-size: 12px;
+}
+
+.post-username {
+  font-weight: 600;
+}
+
+.new-history {
+  width: 15px;
+  height: 15px;
+  color: white;
+  background-color: #3897F0;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  text-align: center;
+  line-height: 1;
+}
+
+.new-comment {
+  border-top: solid 1px #e0e0e0;
+}
+
+.simple-input {
+  width: 100%;
+  background-color: white;
+  border: none;
+}
+
+.simple-input:focus {
+  outline:none;
+}
+
+.footer-row {
+  position: relative;
+}
+
 footer {
-  height: 30px;
-  background-color: orange;
+  border-top: solid 1px #e0e0e0;
+  background-color: white;
 }

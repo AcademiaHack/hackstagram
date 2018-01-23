@@ -9,4 +9,5 @@ class User < ApplicationRecord
   
   has_many :posts
   has_many :histories
+  has_one  :profile
 end
