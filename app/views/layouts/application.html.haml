@@ -10,7 +10,4 @@
     %script{defer: '',  src: "https://use.fontawesome.com/releases/v5.0.4/js/all.js"}
     = render 'application/favicon'
   %body
-    - if notice || alert
-      %p.notice= notice
-      %p.alert= alert
     = yield
