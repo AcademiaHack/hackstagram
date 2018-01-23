@@ -14,11 +14,11 @@
         .scrolleable
           .p-2.mt-3.mb-2
             .row.no-gutters
-              .col-sm-2.text-center.mr-2
+              .col-3.col-sm-2.text-center.mr-2
                 = render partial: 'history_item', locals: { avatar:  current_user.avatar.url, add_icon: true, subtitle: nil}
-              .col-sm-2.text-center.mr-2
+              .col-3.col-sm-2.text-center.mr-2
                 = render partial: 'history_item', locals: { avatar:  'ign', add_icon: false, subtitle: 'IGN'}
-              .col-sm-2.text-center.mr-2
+              .col-3.col-sm-2.text-center.mr-2
                 = render partial: 'history_item', locals: { avatar:  '9gag', add_icon: false, subtitle: '9GAG'}
           .posts
             - @posts.each do |post|
